@@ -128,21 +128,21 @@
       <button onclick="validateStage3()" class="mt-4 w-full bg-fuchsia-500 text-white font-bold py-2.5 px-6 rounded-xl text-sm shadow-sm">Commit Testimony 🔐</button>
     </div>
 
-    <!-- STAGE 4: DO YOU LOVE HIM (EVADING MEH BUTTON) -->
+    <!-- STAGE 4: DO YOU LOVE HIM (FIXED CONTAINER FOR EVADING MEH BUTTON) -->
     <div id="stage-4" class="stage-container hidden flex flex-col items-center text-center">
       <h2 class="text-base font-extrabold text-gray-800 mb-1">❤️ Level 4: The Core Calibration</h2>
       <p class="text-xs text-red-600 font-semibold mb-4">"The Definitive Choice"</p>
       <p class="text-gray-700 text-sm font-bold mb-6">Do u love him?</p>
-      <div class="flex justify-center items-center gap-4 relative h-20 w-full overflow-hidden rounded-xl bg-gray-50 border border-gray-100 p-2">
-        <button onclick="triggerLoveSelection('yes')" class="bg-emerald-500 text-white px-6 py-2 rounded-xl text-xs font-bold shadow-sm hover:scale-105 transition-transform z-10">
+      <div class="flex justify-center items-center gap-4 relative h-64 w-full border border-pink-100 bg-gray-50 rounded-2xl p-4 shadow-inner">
+        <button onclick="triggerLoveSelection('yes')" class="bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-3 rounded-xl text-xs font-bold shadow-md hover:scale-105 transition-transform z-10">
           yess i doo
         </button>
-        <button id="evade-meh-btn" onmouseover="dodgeButton('evade-meh-btn')" onclick="dodgeButton('evade-meh-btn')" class="absolute bg-gray-200 text-gray-500 px-5 py-2 rounded-xl text-xs font-semibold transition-all duration-150">
+        <button id="evade-meh-btn" onmouseover="dodgeButton('evade-meh-btn')" onclick="dodgeButton('evade-meh-btn')" class="absolute bg-gray-200 hover:bg-gray-300 text-gray-500 px-6 py-2.5 rounded-xl text-xs font-semibold transition-all duration-200 shadow-sm z-20" style="left: 60%; top: 45%;">
           meh
         </button>
       </div>
       <div id="feedback-box-4" class="hidden mt-3 w-full p-3 rounded-xl text-xs font-semibold transition-all"></div>
-      <button id="next-btn-4" onclick="nextStage(5)" class="hidden mt-4 w-full bg-gray-800 text-white font-bold py-2 rounded-xl text-xs">Advance Frame 🚀</button>
+      <button id="next-btn-4" onclick="nextStage(5)" class="hidden mt-4 w-full bg-gray-800 text-white font-bold py-2.5 rounded-xl text-xs shadow-sm">Advance Frame 🚀</button>
     </div>
 
     <!-- STAGE 5: DESERT ISLAND SURVIVAL -->
@@ -151,9 +151,9 @@
       <p class="text-xs text-teal-600 font-semibold mb-4">"The Telepathy Parameter"</p>
       <p class="text-gray-700 text-xs font-bold mb-4">If we were stranded on a beautiful island, what is the number one thing I'd make sure you have?</p>
       <div class="space-y-2">
-        <button onclick="selectIsland('Your favorite snacks and warm coffee')" class="w-full text-left p-3 border border-gray-200 rounded-xl text-xs font-semibold text-gray-700 hover:bg-teal-50">A) Your favorite snacks and warm coffee ☕</button>
-        <button onclick="selectIsland('A cozy blanket & favorite music')" class="w-full text-left p-3 border border-gray-200 rounded-xl text-xs font-semibold text-gray-700 hover:bg-teal-50">B) A cozy blanket & your absolute favorite music 🎵</button>
-        <button onclick="selectIsland('His undivided attention and terrible jokes')" class="w-full text-left p-3 border border-gray-200 rounded-xl text-xs font-semibold text-gray-700 hover:bg-teal-50">C) His undivided attention and beautifully terrible jokes 🙋‍♂️</button>
+        <button onclick="selectIsland('Your favorite snacks and warm coffee')" class="w-full text-left p-3 border border border-gray-200 rounded-xl text-xs font-semibold text-gray-700 hover:bg-teal-50">A) Your favorite snacks and warm coffee ☕</button>
+        <button onclick="selectIsland('A cozy blanket & favorite music')" class="w-full text-left p-3 border border border-gray-200 rounded-xl text-xs font-semibold text-gray-700 hover:bg-teal-50">B) A cozy blanket & your absolute favorite music 🎵</button>
+        <button onclick="selectIsland('His undivided attention and terrible jokes')" class="w-full text-left p-3 border border border-gray-200 rounded-xl text-xs font-semibold text-gray-700 hover:bg-teal-50">C) His undivided attention and beautifully terrible jokes 🙋‍♂️</button>
       </div>
       <div id="feedback-box-5" class="hidden mt-3 p-3 rounded-xl text-xs font-semibold"></div>
       <button id="next-btn-5" onclick="nextStage(6)" class="hidden mt-4 w-full bg-teal-600 text-white font-bold py-2 rounded-xl text-xs">Advance Pipeline 🚀</button>
@@ -167,7 +167,7 @@
       <div class="space-y-2">
         <button onclick="triggerMeter('low')" class="w-full text-left p-2.5 border border-gray-200 rounded-xl text-xs text-gray-600 hover:bg-purple-50">A) 5 to 10 times</button>
         <button onclick="triggerMeter('low')" class="w-full text-left p-2.5 border border-gray-200 rounded-xl text-xs text-gray-600 hover:bg-purple-50">B) 50 to 100 times</button>
-        <button onclick="triggerMeter('high')" class="w-full text-left p-2.5 border border-gray-200 rounded-xl text-xs font-bold text-purple-700 hover:bg-purple-100 bg-purple-50/50">C) He is literally thinking about you right now while you read this exact line. 💖</button>
+        <button onclick="triggerMeter('high')" class="w-full text-left p-2.5 border border border-gray-200 rounded-xl text-xs font-bold text-purple-700 hover:bg-purple-100 bg-purple-50/50">C) He is literally thinking about you right now while you read this exact line. 💖</button>
       </div>
       <div id="feedback-box-6" class="hidden mt-3 p-3 rounded-xl text-xs font-semibold"></div>
       <button id="next-btn-6" onclick="nextStage(7)" class="hidden mt-4 w-full bg-purple-600 text-white font-bold py-2 rounded-xl text-xs">Advance Matrix 🚀</button>
@@ -178,11 +178,11 @@
       <h2 class="text-base font-extrabold text-gray-800 mb-1">🛡️ Level 7: The Security Anchor</h2>
       <p class="text-xs text-indigo-600 font-semibold mb-4">"The Safehouse Shield"</p>
       <p class="text-gray-700 text-xs font-bold mb-6">Do u think he would ever leave your side?</p>
-      <div class="flex flex-col w-full gap-3 relative min-h-[110px] justify-center items-center bg-gray-50 rounded-xl p-2 border border-gray-100">
-        <button onclick="triggerSideFeedback('correct')" class="w-full bg-emerald-500 text-white font-bold py-2.5 px-4 rounded-xl text-xs shadow-sm z-10">
+      <div class="flex flex-col w-full gap-3 relative h-64 justify-center items-center border border-pink-100 bg-gray-50 rounded-2xl p-4 shadow-inner">
+        <button onclick="triggerSideFeedback('correct')" class="bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-3 px-6 rounded-xl text-xs shadow-md z-10 hover:scale-105 transition-transform">
           Never, Not a Chance! 🪐
         </button>
-        <button id="dodge-side-btn" onmouseover="dodgeButton('dodge-side-btn')" onclick="dodgeButton('dodge-side-btn')" class="absolute bg-gray-200 text-gray-400 font-semibold py-1.5 px-4 rounded-lg text-xs transition-all duration-150">
+        <button id="dodge-side-btn" onmouseover="dodgeButton('dodge-side-btn')" onclick="dodgeButton('dodge-side-btn')" class="absolute bg-gray-200 hover:bg-gray-300 text-gray-400 font-semibold py-2 px-5 rounded-xl text-xs transition-all duration-200 shadow-sm z-20" style="left: 55%; top: 65%;">
           Maybe someday?
         </button>
       </div>
@@ -196,9 +196,9 @@
       <p class="text-xs text-violet-600 font-semibold mb-4">"The Superpower Parameter"</p>
       <p class="text-gray-700 text-xs font-bold mb-4">What do you think our combined superpower is going to be when we are old and gray?</p>
       <div class="space-y-2">
-        <button onclick="selectForecast('Coolest couple in the room')" class="w-full text-left p-2.5 border border-gray-200 rounded-xl text-xs text-gray-600 hover:bg-violet-50">A) Being the coolest couple in the room 😎</button>
-        <button onclick="selectForecast('Throwing the best dinner parties')" class="w-full text-left p-2.5 border border-gray-200 rounded-xl text-xs text-gray-600 hover:bg-violet-50">B) Throwing the absolute best dinner parties 🍽️</button>
-        <button onclick="selectForecast('Finishing each others sentences & stealing hoodies')" class="w-full text-left p-2.5 border border-gray-200 rounded-xl text-xs text-gray-600 hover:bg-violet-50">C) Finishing each other's sentences & stealing hoodies 🧥</button>
+        <button onclick="selectForecast('Coolest couple in the room')" class="w-full text-left p-2.5 border border border-gray-200 rounded-xl text-xs text-gray-600 hover:bg-violet-50">A) Being the coolest couple in the room 😎</button>
+        <button onclick="selectForecast('Throwing the best dinner parties')" class="w-full text-left p-2.5 border border border-gray-200 rounded-xl text-xs text-gray-600 hover:bg-violet-50">B) Throwing the absolute best dinner parties 🍽️</button>
+        <button onclick="selectForecast('Finishing each others sentences & stealing hoodies')" class="w-full text-left p-2.5 border border border-gray-200 rounded-xl text-xs text-gray-600 hover:bg-violet-50">C) Finishing each other's sentences & stealing hoodies 🧥</button>
       </div>
       <div id="feedback-box-8" class="hidden mt-3 p-3 rounded-xl text-xs font-semibold"></div>
       <button id="next-btn-8" onclick="nextStage(9)" class="hidden mt-4 w-full bg-violet-600 text-white font-bold py-2 rounded-xl text-xs">Enter Pre-Final Gate 👑</button>
@@ -230,11 +230,11 @@
       <p class="text-sm font-black text-gray-800 mb-6 leading-snug px-2">
         Would you like to marry me and build an absolute empire of joy together?
       </p>
-      <div class="flex justify-center items-center gap-4 relative h-20 w-full overflow-hidden rounded-xl bg-rose-50/40 border border-rose-100">
+      <div class="flex justify-center items-center gap-4 relative h-64 w-full border border-pink-100 bg-rose-50/40 rounded-2xl p-4 shadow-inner">
         <button onclick="triggerUltimateVictory()" class="bg-gradient-to-r from-rose-500 to-pink-500 text-white px-8 py-3 rounded-xl text-xs font-bold shadow-md hover:scale-105 transition-transform z-10">
           YES! A Million Times Yes!
         </button>
-        <button id="final-no-btn" onmouseover="dodgeButton('final-no-btn')" onclick="dodgeButton('final-no-btn')" class="absolute bg-gray-200 text-gray-500 px-5 py-2 rounded-xl text-xs font-semibold transition-all duration-150">
+        <button id="final-no-btn" onmouseover="dodgeButton('final-no-btn')" onclick="dodgeButton('final-no-btn')", class="absolute bg-gray-200 hover:bg-gray-300 text-gray-500 px-6 py-2.5 rounded-xl text-xs font-semibold transition-all duration-200 shadow-sm z-20" style="left: 55%; top: 55%;">
           No way
         </button>
       </div>
@@ -267,9 +267,11 @@
       <div class="w-full rounded-xl overflow-hidden shadow-sm mb-3">
         <img src="https://images.unsplash.com/photo-1703904836184-0ce0d10d2fd0?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Stars Visual" class="w-full h-24 object-cover">
       </div>
-      <p class="text-emerald-600 font-extrabold text-xs text-center">
-        ✨ Looks like u are meant to be together forever! Your kids would look fabulous! 👶🌟
-      </p>
+      <div class="p-2 text-center bg-emerald-50 rounded-xl">
+        <p class="text-emerald-600 font-extrabold text-xs">
+          ✨ Looks like u are meant to be together forever! Your kids would look fabulous! 👶🌟
+        </p>
+      </div>
     </div>
 
   </main>
@@ -321,15 +323,19 @@
       const btn = document.getElementById(id);
       btn.style.position = 'absolute';
       const container = btn.parentElement;
-      const rect = container.getBoundingClientRect();
-      const maxX = rect.width - btn.offsetWidth;
-      const maxY = rect.height - btn.offsetHeight;
       
-      let randomX = Math.random() * maxX;
-      let randomY = Math.random() * maxY;
+      const maxX = container.clientWidth - btn.offsetWidth;
+      const maxY = container.clientHeight - btn.offsetHeight;
       
-      btn.style.left = `${Math.min(Math.max(0, randomX), maxX)}px`;
-      btn.style.top = `${Math.min(Math.max(0, randomY), maxY)}px`;
+      let randomX = Math.floor(Math.random() * maxX);
+      let randomY = Math.floor(Math.random() * maxY);
+      
+      // Strict layout bounds check
+      if(randomX < 0) randomX = 10;
+      if(randomY < 0) randomY = 10;
+      
+      btn.style.left = randomX + 'px';
+      btn.style.top = randomY + 'px';
     }
 
     function validateStage1() {
@@ -451,7 +457,7 @@
       }
       if(txt.includes('no') || txt.includes('dont love') || txt.includes('dilemma')) {
         fb.classList.add('bg-red-100', 'text-red-700');
-        fb.innerText = "❌ Oh wrong! I believe you do love him, the universe knows it! Overriding bad replies...";
+        fb.innerText = "❌ Oh wrong! I believe you do love him, the universe knows it! Overriding bad replies... 😉";
       } else if (!loveMeterConfirmed) {
         fb.classList.add('bg-amber-100', 'text-amber-800');
         fb.innerText = "⚠️ Make sure you verify that nobody can love you more before continuing.";
@@ -501,5 +507,6 @@
   </script>
 </body>
 </html>
+
 
 
